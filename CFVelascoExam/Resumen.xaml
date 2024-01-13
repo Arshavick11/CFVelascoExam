@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CFVelascoExam.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout>
+        <Label 
+        Text="RESUMEN!"
+        VerticalOptions="Center"
+        HorizontalOptions="Center" />
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label
+            Margin="20"
+            Text="Nombre: "/>
+            <Label
+            Margin="20"
+            Grid.Column="1"
+            x:Name="nombre"/>
+            <Label
+            
+            Margin="20"
+            Grid.Row="1"
+            Text="Apellido: "/>
+            <Label
+            Margin="20"
+            Grid.Column="1"
+            Grid.Row="1"
+            x:Name="apellido"/>
+            <Label
+            Margin="20"
+ Grid.Row="2"
+ Text="Edad: "/>
+            <Label
+            Margin="20"
+ Grid.Column="1"
+ Grid.Row="2"
+ x:Name="edad"/>
+
+            <Label
+        Margin="20"
+ Grid.Row="3"
+ Text="Fecha: "/>
+            <Label
+        Margin="20"
+ Grid.Column="1"
+ Grid.Row="3"
+ x:Name="fecha"/>
+            <Label
+        Margin="20"
+ Grid.Row="4"
+ Text="Ciudad: "/>
+            <Label
+        Margin="20"
+ Grid.Column="1"
+ Grid.Row="4"
+ x:Name="ciudad"/>
+            <Label
+        Margin="20"
+ Grid.Row="5"
+ Text="Pais: "/>
+            <Label
+        Margin="20"
+ Grid.Column="1"
+ Grid.Row="5"
+ x:Name="pais"/>
+            <Label
+        Margin="20"
+ Grid.Row="6"
+ Text="Monto Inicial: "/>
+            <Label
+        Margin="20"
+ Grid.Column="1"
+ Grid.Row="6"
+ x:Name="monoInicial"/>
+            <Label
+        Margin="20"
+ Grid.Row="7"
+ Text="Mensual: "/>
+            <Label
+        Margin="20"
+ Grid.Column="1"
+ Grid.Row="7"
+ x:Name="mensual"/>
+            <Label
+        Margin="20"
+ Grid.Row="8"
+ Text="total: "/>
+            <Label
+        Margin="20"
+ Grid.Column="1"
+ Grid.Row="8"
+ x:Name="total"/>
+        </Grid>
+        <Button
+        Text="Cerrar sesion"
+        Clicked="Button_Cerrar"/>
+    </VerticalStackLayout>
+</ContentPage>
